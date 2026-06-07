@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./App.css";
+import Login from "./login";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+const navigate = useNavigate();
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [message, setMessage] = useState("");
@@ -24,7 +27,7 @@ setMessage("");
       }),
     }
   );
-
+ 
   const data = await response.json();
 
   if (!response.ok) {
@@ -73,8 +76,8 @@ return (
     <br />
     <p>{message}</p>
   </div>
+  <button onClick={() => navigate("/login")}>Go to Login</button>
 </div>
-
 );
 }
 

@@ -10,23 +10,17 @@ body {
 
 .container {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #f5f7fb;
 }
 
 .card {
   width: 400px;
-
   background: white;
-
   padding: 40px;
-
   border-radius: 16px;
-
   box-shadow:
     0 10px 30px rgba(0,0,0,0.08);
 }
@@ -42,39 +36,26 @@ body {
 
 .card input {
   width: 100%;
-
   padding: 12px;
-
   margin-bottom: 15px;
-
   border: 1px solid #ddd;
-
   border-radius: 8px;
-
   font-size: 16px;
 }
 
 .card input:focus {
   outline: none;
-
   border-color: royalblue;
 }
 
 .card button {
   width: 100%;
-
   padding: 12px;
-
   border: none;
-
   border-radius: 8px;
-
   background: royalblue;
-
   color: white;
-
   font-size: 16px;
-
   cursor: pointer;
 }
 
